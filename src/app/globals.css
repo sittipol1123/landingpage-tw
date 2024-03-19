@@ -25,3 +25,27 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.variant-filled-secondary {
+  --tw-bg-opacity: 1;
+  background-color: rgb(167, 245, 34, 1);
+  color: rgb(0, 0, 0, 1);
+}
+
+.btn {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  white-space: nowrap;
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(.4,0,.2,1);
+  transition-duration: .15s;
+  border-radius: 9999px;
+}
