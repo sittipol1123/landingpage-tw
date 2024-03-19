@@ -1,6 +1,10 @@
 import "flowbite";
 
-const Drawerheader = () => {
+interface Props {
+    apptitle?: String
+}
+
+const Drawerheader = (props: Props) => {
   return (
     <>
       <div
@@ -11,7 +15,7 @@ const Drawerheader = () => {
           id="drawer-label"
           className="inline-flex items-center mb-4 text-base font-semibold text-gray-500 dark:text-gray-400"
         >
-          ALYA SVELTEKIT SAAS
+          {props.apptitle}
         </h5>
         <button
           type="button"

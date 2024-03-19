@@ -1,9 +1,11 @@
 import Drawerheader from "./Drawerheader";
 
+const appTitle = "nextjs ไอ้น้อง";
+
 const Header = () => {
   return (
     <>
-      <Drawerheader></Drawerheader>
+      <Drawerheader apptitle={appTitle}></Drawerheader>
       <nav
         id="navbar"
         className="fixed h-14 top-0 inset-x-0 z-20 w-full border-b border-gray-100 bg-white/80 backdrop-blur dark:border-gray-700/30 dark:bg-gray-900/80"
@@ -16,7 +18,7 @@ const Header = () => {
                 aria-label="ampire logo"
                 className="text-xl uppercase nav-link flex items-center space-x-2"
               >
-                Alya Sveltekit SaaS
+                {appTitle}
               </a>
 
               <button
@@ -62,7 +64,7 @@ const Header = () => {
                   </li>
                   <li>
                     <a
-                      href="/Info"
+                      href="#"
                       className="nav-link block transition hover:text-primary dark:hover:text-primaryLight lg:px-4"
                     >
                       <span>Info</span>
