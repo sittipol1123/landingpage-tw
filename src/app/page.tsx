@@ -12,8 +12,8 @@ export default function Home() {
                 <div className="relative gap-12 lg:flex">
                   <div>
                     <h1 className="text-center font-bold text-5xl sm:text-6xl lg:w-4/8 lg:text-left lg:text-7xl">
-                      Ship your own
-                      <br /> startup fast⚡
+                      It's never too late to
+                      <br /> start learning.⚡
                     </h1>
                     <br />
                     <p className="text-center text-3xl sm:text-3xl lg:text-left lg:text-3xl">
@@ -52,9 +52,10 @@ export default function Home() {
                       style={{ width: "auto" }}
                     />
                     <p className="text-lg sm:text-xl">
-                      Ship your waifu✅
+                      {/* Ship your waifu✅
                       <br />
-                      (Alya Roshidere)
+                      (Alya Roshidere) */}
+                      The Best Waifu✅
                     </p>
                   </div>
                 </div>
