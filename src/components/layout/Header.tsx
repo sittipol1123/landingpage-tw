@@ -1,4 +1,5 @@
 import Drawerheader from "./Drawerheader";
+import Link from "next/link";
 
 const appTitle = "nextjs ไอ้น้อง";
 
@@ -11,15 +12,15 @@ const Header = () => {
         className="fixed h-14 top-0 inset-x-0 z-20 w-full border-b border-gray-100 bg-white/80 backdrop-blur dark:border-gray-700/30 dark:bg-gray-900/80"
       >
         <div className="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
+          {/* default lg:py in relative class = 4 */}
           <div className="relative flex flex-wrap items-center justify-between gap-6 lg:gap-0 lg:py-4">
             <div className="relative z-20 flex w-full justify-between md:px-0 lg:w-max">
-              <a
-                href="/#"
-                aria-label="ampire logo"
+              <Link
+                href="/"
                 className="text-xl uppercase nav-link flex items-center space-x-2"
               >
                 {appTitle}
-              </a>
+              </Link>
 
               <button
                 aria-label="humburger"
@@ -55,31 +56,31 @@ const Header = () => {
               <div className="dark:text-gray-300 lg:pr-4">
                 <ul className="space-y-6 text-base tracking-wide lg:flex lg:space-y-0 lg:text-sm">
                   <li>
-                    <a
-                      href="/#"
+                    <Link
+                      href={"/"}
                       className="nav-link block transition hover:text-primary dark:hover:text-primaryLight lg:px-4"
                     >
                       <span>Homepage</span>
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      href="#"
+                    <Link
+                      href="/about"
                       className="nav-link block transition hover:text-primary dark:hover:text-primaryLight lg:px-4"
                     >
-                      <span>Info</span>
-                    </a>
+                      <span>About Me</span>
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      href=""
+                    <Link
+                      href="/languageskill"
                       className="nav-link block transition hover:text-primary dark:hover:text-primaryLight lg:px-4"
                     >
-                      <span>Product</span>
-                    </a>
+                      <span>Language Skill</span>
+                    </Link>
                   </li>
 
-                  <li>
+                  {/* <li>
                     <a
                       href="/#features"
                       className="nav-link block transition hover:text-primary dark:hover:text-primaryLight lg:px-4"
@@ -94,17 +95,17 @@ const Header = () => {
                     >
                       <span>Pricing</span>
                     </a>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
 
-              <button className="btn btn-sm variant-ghost-surface">
+              {/* <button className="btn btn-sm variant-ghost-surface">
                 <a href="/login">
                   <span className="relative text-sm font-semibold lg:text-primary lg:dark:text-white">
                     Login
                   </span>
                 </a>
-              </button>
+              </button> */}
             </div>
           </div>
         </div>

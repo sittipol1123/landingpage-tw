@@ -1,82 +1,84 @@
-import Mainlayout from "@/components/layout/Mainlayout";
 import IndexCarousel from "@/components/carousel/IndexCarousel";
+import Mainlayout from "@/components/layout/Mainlayout";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <>
-      <Mainlayout>
-        <div className="bg-white h-full">
-          <section id="home" className="pt-32 sm:pt-40 md:pt-28">
-            <div className="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
-              <div className="relative">
-                <div className="relative gap-12 lg:flex">
-                  <div>
-                    <h1 className="text-center font-bold text-5xl sm:text-6xl lg:w-4/8 lg:text-left lg:text-7xl">
-                      It's never too late to
-                      <br /> start learning.⚡
-                    </h1>
-                    <br />
-                    <p className="text-center text-3xl sm:text-3xl lg:text-left lg:text-3xl">
-                      The ultimate Sveltekit Skeleton UI <br />
-                      template to build your SaaS startup <br />
-                      product in days. Not forever!
+    <Mainlayout>
+      <div className="bg-white h-full">
+        <section id="home" className="pt-32 sm:pt-40 md:pt-28">
+          <div className="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
+            <div className="relative">
+              <div className="relative gap-12 lg:flex">
+                <div>
+                  <h1 className="text-center font-bold text-5xl sm:text-6xl lg:w-4/8 lg:text-left lg:text-7xl">
+                    It's never too late to
+                    <br /> start learning.
+                  </h1>
+                  <br />
+                  <p className="text-center text-3xl sm:text-3xl lg:text-left lg:text-3xl">
+                    {/* The ultimate Sveltekit Skeleton UI <br />
+                    template to build your SaaS startup <br />
+                    product in days. Not forever! */}
+                    Full-Stack, Backend, Frontend Web Development <br />
+                    And IoT Development
+                  </p>
+
+                  <div className="text-center text-3xl sm:text-3xl lg:w-9/12 lg:text-left lg:text-3xl">
+                    <p className="mt-12 text-lg sm:text-xl">
+                      Ship your new SaaS product fast! No overwhelmed on tech
+                      stack anymore
                     </p>
+                    <p className="flex justify-center items-center mt-12 text-lg text-gray-600 dark:text-gray-300 sm:text-xl"></p>
 
-                    <div className="text-center text-3xl sm:text-3xl lg:w-9/12 lg:text-left lg:text-3xl">
-                      <p className="mt-12 text-lg sm:text-xl">
-                        Ship your new SaaS product fast! No overwhelmed on tech
-                        stack anymore
-                      </p>
-                      <p className="flex justify-center items-center mt-12 text-lg text-gray-600 dark:text-gray-300 sm:text-xl"></p>
-
-                      <div className="flex justify-center items-center">
-                        <button className="flex flex-col space-y-2 sm:flex-row md:w-max lg:space-y-0">
-                          <a
-                            href="/"
-                            className="relative flex h-9 w-full justify-center before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition-transform before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-125"
-                          >
-                            <span className="relative text-sm font-semibold btn variant-filled-secondary">
-                              start
-                            </span>
-                          </a>
-                        </button>
-                      </div>
+                    <div className="flex justify-center items-center">
+                      <button className="flex flex-col space-y-2 sm:flex-row md:w-max lg:space-y-0">
+                        <a
+                          href="/"
+                          className="relative flex h-9 w-full justify-center before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition-transform before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-125"
+                        >
+                          <Link href={"/about"} className="relative text-sm font-semibold btn variant-filled-secondary">
+                            About Me
+                          </Link>
+                        </a>
+                      </button>
                     </div>
-                  </div>
-
-                  <div className="text-center rounded-3xl mt-12 overflow-hidden sm:mt-12 sm:w-full lg:-mt-6 lg:w-4/12 anim-float-card">
-                    <img
-                      className="w-full"
-                      src="https://sveltekit-saas.pages.dev/images/Roshidere.png"
-                      alt="project illustration"
-                      style={{ width: "auto" }}
-                    />
-                    <p className="text-lg sm:text-xl">
-                      {/* Ship your waifu✅
-                      <br />
-                      (Alya Roshidere) */}
-                      The Best Waifu✅
-                    </p>
                   </div>
                 </div>
 
-                <div className="relative gap-12 lg:flex"></div>
+                <div className="text-center rounded-3xl mt-12 overflow-hidden sm:mt-12 sm:w-full lg:-mt-6 lg:w-4/12 anim-float-card">
+                  <img
+                    className="w-full"
+                    src="https://sveltekit-saas.pages.dev/images/Roshidere.png"
+                    alt="project illustration"
+                    style={{ width: "auto" }}
+                  />
+                  <p className="text-lg sm:text-xl">
+                    {/* Ship your waifu✅⚡
+                      <br />
+                      (Alya Roshidere) */}
+                    The Best Waifu✅
+                  </p>
+                </div>
               </div>
+
+              <div className="relative gap-12 lg:flex"></div>
             </div>
-          </section>
-          <section id="Myskill" className="relative mb-32 pt-40">
-            <div className="relative mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
-              <div className="text-center">
-                <h2 className="text-4xl font-bold xl:text-5xl">My Skill</h2>
-                <p className="mx-auto mt-6 md:w-3/4 lg:w-3/5">
-                  {/* Whether you’re building your own models or applying foundation
+          </div>
+        </section>
+        <section id="Myskill" className="relative mb-28 pt-40">
+          <div className="relative mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
+            <div className="text-center">
+              <h2 className="text-4xl font-bold xl:text-5xl">My Skill</h2>
+              <p className="mx-auto mt-6 md:w-3/4 lg:w-3/5">
+                {/* Whether you’re building your own models or applying foundation
                   models to your business, data remains the biggest bottleneck
                   to AI.{" "} */}
-                  This is the skill I studied. and able to work in the past
-                  period which are all as follows.
-                </p>
-              </div>
-              {/* <div className="mt-16 grid gap-8 sm:mx-auto sm:w-2/3 md:w-full md:grid-cols-2 lg:grid-cols-3">
+                This is the skill I studied. and able to work in the past period
+                which are all as follows.
+              </p>
+            </div>
+            {/* <div className="mt-16 grid gap-8 sm:mx-auto sm:w-2/3 md:w-full md:grid-cols-2 lg:grid-cols-3">
                 <div className="card p-4 rounded-3xl border-gray-100 shadow-gray-600/10 sm:p-12">
                   <div className="space-y-12 text-center">
                     <img
@@ -195,22 +197,74 @@ export default function Home() {
                   </div>
                 </div>
               </div> */}
+          </div>
+          <IndexCarousel></IndexCarousel>
+        </section>
+        <section id="pricing" className="overflow-x-clip pt-22 mb-32">
+          <div className="mx-auto px-4 sm:px-12 xl:max-w-5xl xl:px-0">
+            <div className="relative z-10 text-center md:mx-auto md:w-5/6 lg:w-4/6">
+              <h2 className="text-3xl font-bold text-gray-900 dark:text-white md:text-4xl xl:text-5xl">
+                Contact Me
+              </h2>
+              <p className="mt-6 text-gray-700 dark:text-gray-300">
+                If you would like to contact me or would like to see my resume,
+                you can do so by sending me an email or by viewing my previous
+                work on github in the link below.
+              </p>
             </div>
-            <IndexCarousel></IndexCarousel>
-          </section>
-          <section id="pricing" className="overflow-x-clip pt-22 mb-32">
-            <div className="mx-auto px-4 sm:px-12 xl:max-w-5xl xl:px-0">
-              <div className="relative z-10 text-center md:mx-auto md:w-5/6 lg:w-4/6">
-                <h2 className="text-3xl font-bold text-gray-900 dark:text-white md:text-4xl xl:text-5xl">
-                  A pricing for every need
-                </h2>
-                <p className="mt-6 text-gray-700 dark:text-gray-300">
-                  Saepe nulla ab nobis itaque corporis fuga illo doloribus sequi
-                  esse aspernatur impedit nihil quisquam, voluptates placeat
-                  architecto adipisci id cum enim.
-                </p>
+            <div className="mt-12 text-center">
+              {/* <span className="text-sm font-semibold tracking-wider dark:text-white">
+                  TRUSTED BY YOUR FAVORED TOP TECHS COMPANIES
+                </span> */}
+
+              <div className="mt-8 flex flex-wrap justify-center gap-6 brightness-75 contrast-200 lg:gap-24">
+                <a href="https://github.com/sittipol1123" target="_blank">
+                  <img
+                    className="h-8 w-auto lg:h-10 lg:w-auto"
+                    src="/images/25231.png"
+                    loading="lazy"
+                    alt="github"
+                    width=""
+                    height=""
+                  />
+                </a>
+                <a href="mailto:sittipol1123@gmail.com">
+                  <img
+                    className="h-8 w-auto lg:h-10 lg:w-auto"
+                    src="/images/112-gmail_email_mail-512.webp"
+                    loading="lazy"
+                    alt="gmail"
+                    width=""
+                    height=""
+                  />
+                </a>
+                <img
+                  className="h-8 w-auto lg:h-10 lg:w-auto"
+                  src="/images/twitter-brand-new-logo-3-d-with-new-x-shaped-graphic-of-the-world-s-most-popular-social-media-free-png.webp"
+                  loading="lazy"
+                  alt="twitter"
+                  width=""
+                  height=""
+                />
+                <img
+                  className="h-8 w-auto lg:h-10 lg:w-auto"
+                  src="/images/Facebook_Logo_(2019).png.webp"
+                  loading="lazy"
+                  alt="facebook"
+                  width=""
+                  height=""
+                />
+                {/* <img
+                    className="h-8 w-auto lg:h-10 lg:w-auto"
+                    src="./../images/clients/microsoft.svg"
+                    loading="lazy"
+                    alt="microsoft"
+                    width=""
+                    height=""
+                  /> */}
               </div>
-              <div className="relative mt-20">
+            </div>
+            {/* <div className="relative mt-20">
                 <div
                   aria-hidden="true"
                   className="absolute inset-0 -bottom-20 mx-auto mt-auto h-[50rem] w-[68rem] rounded-full bg-secondaryLight/50 blur-3xl dark:bg-secondary/40 md:m-auto"
@@ -457,11 +511,10 @@ export default function Home() {
                     />
                   </div>
                 </div>
-              </div>
-            </div>
-          </section>
-        </div>
-      </Mainlayout>
-    </>
+              </div> */}
+          </div>
+        </section>
+      </div>
+    </Mainlayout>
   );
 }
