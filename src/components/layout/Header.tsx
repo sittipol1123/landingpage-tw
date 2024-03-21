@@ -15,7 +15,7 @@ const Header = () => {
       <Drawerheader apptitle={appTitle}></Drawerheader>
       <nav
         id="navbar"
-        className="fixed h-14 top-0 inset-x-0 z-20 w-full border-b border-gray-100 bg-white/80 backdrop-blur dark:border-gray-700/30 dark:bg-gray-900/80"
+        className="fixed h-14 top-0 inset-x-0 z-20 w-full light:border-b light:border-gray-100 light:bg-white/80 backdrop-blur dark:border-gray-700/30 dark:bg-gray-900/80"
       >
         <div className="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
           {/* default lg:py in relative class = 4 */}

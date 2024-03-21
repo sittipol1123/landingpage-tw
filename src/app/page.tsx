@@ -208,10 +208,10 @@ export default function Home() {
         <section id="pricing" className="overflow-x-clip pt-22 mb-32">
           <div className="mx-auto px-4 sm:px-12 xl:max-w-5xl xl:px-0">
             <div className="relative z-10 text-center md:mx-auto md:w-5/6 lg:w-4/6">
-              <h2 className="text-3xl font-bold text-gray-900 dark:text-white md:text-4xl xl:text-5xl">
+              <h2 className="text-3xl font-bold light:text-gray-900 dark:text-white md:text-4xl xl:text-5xl">
                 Contact Me
               </h2>
-              <p className="mt-6 text-gray-700 dark:text-gray-300">
+              <p className="mt-6 light:text-gray-700 dark:text-gray-300">
                 If you would like to contact me or would like to see my resume,
                 you can do so by sending me an email or by viewing my previous
                 work on github in the link below.

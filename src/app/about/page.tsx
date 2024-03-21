@@ -47,19 +47,20 @@ const Aboutme = () => {
               <hr />
               <br />
               <p>
-                &emsp;Hello, I&apos;m Aum. I have a total of 1.8 years of experience
-                in programming. I am able to create projects and close them. I
-                have been working with cms and salepage systems for 1 year. The
-                system was developed with the laravel framework. Before moving
-                to work writing nextjs, express, arduino, I was given the
-                requirements: To make a system that can view device information
-                whether the device is online or offline, I wrote an arduino
-                program. To flash the device to send values from the device to
-                the system and write a service to receive data. from the device
-                to store on the server I like challenges I like to find new
-                knowledge around me. I like to learn new things. Don&apos;t like to
-                stay in one place. Which I think I can be a force for the team.
-                or your company Nice to meet you and thank you.{" "}
+                &emsp;Hello, I&apos;m Aum. I have a total of 1.8 years of
+                experience in programming. I am able to create projects and
+                close them. I have been working with cms and salepage systems
+                for 1 year. The system was developed with the laravel framework.
+                Before moving to work writing nextjs, express, arduino, I was
+                given the requirements: To make a system that can view device
+                information whether the device is online or offline, I wrote an
+                arduino program. To flash the device to send values from the
+                device to the system and write a service to receive data. from
+                the device to store on the server I like challenges I like to
+                find new knowledge around me. I like to learn new things.
+                Don&apos;t like to stay in one place. Which I think I can be a
+                force for the team. or your company Nice to meet you and thank
+                you.{" "}
               </p>
               <br />
               <div className="relative gap-12 lg:flex">
@@ -97,7 +98,7 @@ const Aboutme = () => {
                 <p className="text-lg sm:text-xl font-bold">Example Project</p>
               </div>
               <div className="relative gap-12 lg:flex">
-                <div className="grid grid-cols-2 lg:w-12/12 md:grid-cols-3 gap-4">
+                <div className="grid grid-cols-2 lg:w-12/12 md:grid-cols-3 gap-4 ">
                   {frmdata.map((val, key) => {
                     return (
                       <div key={key}>
@@ -112,7 +113,7 @@ const Aboutme = () => {
                             <div className="font-bold text-xl mb-2">
                               {val.title}
                             </div>
-                            <p className="text-gray-700 text-base">
+                            <p className="text-base light:text-gray-700 dark:text-white">
                               {val.description}
                             </p>
                           </div>
