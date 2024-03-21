@@ -1,9 +1,9 @@
-'use client';
+"use client";
 import "flowbite";
 import Link from "next/link";
 
 interface Props {
-    apptitle?: String
+  apptitle?: String;
 }
 
 const Drawerheader = (props: Props) => {

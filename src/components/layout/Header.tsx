@@ -3,7 +3,7 @@ import Drawerheader from "./Drawerheader";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 
-const appTitle = "nextjs ไอ้น้อง";
+const appTitle = "STEP TO DO IT";
 
 const Header = () => {
   const [data, setData] = useState<boolean>(false);
@@ -77,14 +77,14 @@ const Header = () => {
                       <span>About Me</span>
                     </Link>
                   </li>
-                  <li>
+                  {/* <li>
                     <Link
                       href="/languageskill"
                       className="nav-link block transition hover:text-primary dark:hover:text-primaryLight lg:px-4"
                     >
                       <span>Language Skill</span>
                     </Link>
-                  </li>
+                  </li> */}
 
                   {/* <li>
                     <a

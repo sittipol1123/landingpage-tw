@@ -32,11 +32,11 @@ const getCharacterDetail = async (context: GetServerSidePropsContext) => {
   const id = context.params?.id;
   const response = await fetch(`https://gsi.fly.dev/characters/${id}`);
   const result: { result: Result } = await response.json();
-  return <Page result={result.result} />
+  return <Page result={result.result} />;
 };
 
-const Page = (props: {result: Result}) => {
-    console.log(props.result.model_type)
+const Page = (props: { result: Result }) => {
+  //   console.log(props.result.model_type);
   return <>sittipol</>;
 };
 

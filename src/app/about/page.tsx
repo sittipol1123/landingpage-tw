@@ -42,7 +42,56 @@ const Aboutme = () => {
                 style={{ margin: "auto", maxHeight: 300, width: "auto" }}
               />
             </div>
-            <div className="lg:w-12/12">data</div>
+            <div className="lg:w-12/12">
+              <p className="text-xl font-bold">Introduce Yourself</p>
+              <hr />
+              <br />
+              <p>
+                &emsp;Hello, I'm Aum. I have a total of 1.8 years of experience
+                in programming. I am able to create projects and close them. I
+                have been working with cms and salepage systems for 1 year. The
+                system was developed with the laravel framework. Before moving
+                to work writing nextjs, express, arduino, I was given the
+                requirements: To make a system that can view device information
+                whether the device is online or offline, I wrote an arduino
+                program. To flash the device to send values from the device to
+                the system and write a service to receive data. from the device
+                to store on the server I like challenges I like to find new
+                knowledge around me. I like to learn new things. Don't like to
+                stay in one place. Which I think I can be a force for the team.
+                or your company Nice to meet you and thank you.{" "}
+              </p>
+              <br />
+              <div className="relative gap-12 lg:flex">
+                <div className="relative lg:w-6/12">
+                  <p className="text-xl font-bold">My Skill Language</p>
+                  <hr />
+                  <br />
+                  <p>
+                    - HTML <br />
+                    - Javascript <br />
+                    - CSS <br />
+                    - Python <br />
+                    - Arduino C++ <br />
+                    - Typescript <br />
+                    - SQL <br />- PHP
+                  </p>
+                </div>
+                <div className="relative lg:w-6/12">
+                  <p className="text-xl font-bold">My Skill Framework EXP</p>
+                  <hr />
+                  <br />
+                  <p>
+                    - Laravel 8 with Eloquent (1 year) <br />
+                    - Nextjs Typescript 13, 14 (8 month) <br />
+                    - Arduino C++ and MQTT (8 month) <br />
+                    - Node js Express js ts (8 month) <br />
+                    - Prisma (3 month) <br />
+                    - Sequelize (5 month) <br />- Graphql (1 month basic CRUD)
+                  </p>
+                </div>
+              </div>
+            </div>
             <div className="relative">
               <div className="text-center mt-5 mb-5">
                 <p className="text-lg sm:text-xl font-bold">Example Project</p>
@@ -52,7 +101,12 @@ const Aboutme = () => {
                   {frmdata.map((val, key) => {
                     return (
                       <div key={key}>
-                        <Image src={val.images} alt={val.title} width={500} height={500} />
+                        <Image
+                          src={val.images}
+                          alt={val.title}
+                          width={500}
+                          height={500}
+                        />
                         <div className="max-w-sm rounded overflow-hidden shadow-lg">
                           <div className="px-6 py-4">
                             <div className="font-bold text-xl mb-2">

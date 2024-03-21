@@ -24,8 +24,8 @@ export default function Home() {
 
                   <div className="text-center text-3xl sm:text-3xl lg:w-9/12 lg:text-left lg:text-3xl">
                     <p className="mt-12 text-lg sm:text-xl">
-                      Ship your new SaaS product fast! No overwhelmed on tech
-                      stack anymore
+                      That we think differently That doesn't always mean we're
+                      stupid.
                     </p>
                     <p className="flex justify-center items-center mt-12 text-lg text-gray-600 dark:text-gray-300 sm:text-xl"></p>
 
