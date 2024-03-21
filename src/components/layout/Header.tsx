@@ -1,9 +1,15 @@
+"use client";
 import Drawerheader from "./Drawerheader";
 import Link from "next/link";
+import { useState, useEffect } from "react";
 
 const appTitle = "nextjs ไอ้น้อง";
 
 const Header = () => {
+  const [data, setData] = useState<boolean>(false);
+  useEffect(() => {
+    setData(true);
+  }, []);
   return (
     <>
       <Drawerheader apptitle={appTitle}></Drawerheader>

@@ -1,4 +1,5 @@
 import Mainlayout from "@/components/layout/Mainlayout";
+import Image from "next/image";
 
 const frmdata = [
   {
@@ -28,11 +29,20 @@ const Aboutme = () => {
         <section id="aboutme" className="pt-32 sm:pt-40 md:pt-28 pb-8">
           <div className="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
             <div className="items-center relative lg:w-12/12">
-              <img src="https://sveltekit-saas.pages.dev/images/Roshidere.png" style={{ margin: "auto", maxHeight: 300 }} />
+              {/* <img
+                src="https://sveltekit-saas.pages.dev/images/Roshidere.png"
+                style={{ margin: "auto", maxHeight: 300 }}
+              /> */}
+              <Image
+                className="w-full"
+                src="/images/Roshidere.png"
+                alt="project illustration"
+                width={600}
+                height={600}
+                style={{ margin: "auto", maxHeight: 300, width: "auto" }}
+              />
             </div>
-            <div className="lg:w-12/12">
-                data
-            </div>
+            <div className="lg:w-12/12">data</div>
             <div className="relative">
               <div className="text-center mt-5 mb-5">
                 <p className="text-lg sm:text-xl font-bold">Example Project</p>
@@ -42,7 +52,7 @@ const Aboutme = () => {
                   {frmdata.map((val, key) => {
                     return (
                       <div key={key}>
-                        <img src={val.images} alt="" />
+                        <Image src={val.images} alt={val.title} width={500} height={500} />
                         <div className="max-w-sm rounded overflow-hidden shadow-lg">
                           <div className="px-6 py-4">
                             <div className="font-bold text-xl mb-2">

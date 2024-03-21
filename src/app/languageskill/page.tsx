@@ -1,4 +1,5 @@
 import Mainlayout from "@/components/layout/Mainlayout";
+import Image from "next/image";
 
 const LanguageSkill = () => {
   return (
@@ -10,7 +11,7 @@ const LanguageSkill = () => {
               <div className="relative gap-12 lg:flex">
                 <div>
                   <h1 className="text-center font-bold text-5xl sm:text-6xl lg:w-4/8 lg:text-left lg:text-7xl">
-                    It's never too late to
+                    It&apos;s never too late to
                     <br /> start learning.⚡
                   </h1>
                   <br />
@@ -43,11 +44,18 @@ const LanguageSkill = () => {
                 </div>
 
                 <div className="text-center rounded-3xl mt-12 overflow-hidden sm:mt-12 sm:w-full lg:-mt-6 lg:w-4/12 anim-float-card">
-                  <img
+                  {/* <img
                     className="w-full"
                     src="https://sveltekit-saas.pages.dev/images/Roshidere.png"
                     alt="project illustration"
                     style={{ width: "auto" }}
+                  /> */}
+                  <Image
+                    className="w-full"
+                    src="/images/Roshidere.png"
+                    alt="project illustration"
+                    width={600}
+                    height={600}
                   />
                   <p className="text-lg sm:text-xl">
                     {/* Ship your waifu✅
