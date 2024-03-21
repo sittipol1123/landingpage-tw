@@ -25,7 +25,7 @@ const frmdata = [
 const Aboutme = () => {
   return (
     <Mainlayout>
-      <div className="bg-white">
+      <div className="light:bg-white dark:bg-black h-full">
         <section id="aboutme" className="pt-32 sm:pt-40 md:pt-28 pb-8">
           <div className="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
             <div className="items-center relative lg:w-12/12">
@@ -47,7 +47,7 @@ const Aboutme = () => {
               <hr />
               <br />
               <p>
-                &emsp;Hello, I'm Aum. I have a total of 1.8 years of experience
+                &emsp;Hello, I&apos;m Aum. I have a total of 1.8 years of experience
                 in programming. I am able to create projects and close them. I
                 have been working with cms and salepage systems for 1 year. The
                 system was developed with the laravel framework. Before moving
@@ -57,7 +57,7 @@ const Aboutme = () => {
                 program. To flash the device to send values from the device to
                 the system and write a service to receive data. from the device
                 to store on the server I like challenges I like to find new
-                knowledge around me. I like to learn new things. Don't like to
+                knowledge around me. I like to learn new things. Don&apos;t like to
                 stay in one place. Which I think I can be a force for the team.
                 or your company Nice to meet you and thank you.{" "}
               </p>

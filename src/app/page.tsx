@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <Mainlayout>
-      <div className="bg-white h-full">
+      <div className="light:bg-white dark:bg-black h-full">
         <section id="home" className="pt-32 sm:pt-40 md:pt-28">
           <div className="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
             <div className="relative">
@@ -24,7 +24,7 @@ export default function Home() {
 
                   <div className="text-center text-3xl sm:text-3xl lg:w-9/12 lg:text-left lg:text-3xl">
                     <p className="mt-12 text-lg sm:text-xl">
-                      That we think differently That doesn't always mean we're
+                      That we think differently That doesn&apos;t always mean we&apos;re
                       stupid.
                     </p>
                     <p className="flex justify-center items-center mt-12 text-lg text-gray-600 dark:text-gray-300 sm:text-xl"></p>

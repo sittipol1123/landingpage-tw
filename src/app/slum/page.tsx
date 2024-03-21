@@ -1,23 +1,10 @@
 import IndexCarousel from "@/components/carousel/IndexCarousel";
-import { Metadata, ResolvingMetadata } from "next";
+import { Metadata } from "next";
 import Mainlayout from "@/components/layout/Mainlayout";
 
-let maindata;
-
-const testdata = async () => {
-  const fetchdata = await fetch("https://gsi.fly.dev/characters");
-  const res: Root = await fetchdata.json();
-  maindata = res;
-}
-testdata();
-console.log(maindata);
-
-
-export async function generateMetadata(propsdata: string): Promise<Metadata> {
-  const response = await fetch("https://gsi.fly.dev/characters");
-  const data: Root = await response.json();
+export async function generateMetadata(): Promise<Metadata> {
   return {
-    title: data.results[0].name,
+    title: "slum page",
     description: "test",
   };
 }
@@ -37,24 +24,12 @@ export interface Root {
   total_pages: number;
 }
 
-interface Props {
-  data: Root;
-}
-
-export async function getCharacterData() {
-  try {
-    const response = await fetch("https://gsi.fly.dev/characters");
-    const data: Root = await response.json();
-    return <Page data={data} />;
-  } catch (error) {
-    console.error("Error fetching data:", error);
-  }
-}
-
-const Page = (props: Props) => {
+export default async function Slum(): Promise<JSX.Element> {
+  const response = await fetch("https://gsi.fly.dev/characters");
+  const data: Root = await response.json();
   return (
     <Mainlayout>
-      {props.data.results.map((val, key) => {
+      {data.results.map((val, key) => {
         return (
           <div className="max-w-sm rounded overflow-hidden shadow-lg" key={key}>
             <div className="px-6 py-4">
@@ -78,6 +53,4 @@ const Page = (props: Props) => {
       {/* <IndexCarousel></IndexCarousel> */}
     </Mainlayout>
   );
-};
-
-export default getCharacterData;
+}
