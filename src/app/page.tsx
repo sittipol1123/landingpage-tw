@@ -24,8 +24,8 @@ export default function Home() {
 
                   <div className="text-center text-3xl sm:text-3xl lg:w-9/12 lg:text-left lg:text-3xl">
                     <p className="mt-12 text-lg sm:text-xl">
-                      That we think differently That doesn&apos;t always mean we&apos;re
-                      stupid.
+                      That we think differently That doesn&apos;t always mean
+                      we&apos;re stupid.
                     </p>
                     <p className="flex justify-center items-center mt-12 text-lg text-gray-600 dark:text-gray-300 sm:text-xl"></p>
 
@@ -71,7 +71,10 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section id="Myskill" className="relative mb-28 pt-40">
+        <section
+          id="Myskill"
+          className="relative lg:mb-28 lg:pt-40 sm:mb-10 sm:pt-20"
+        >
           <div className="relative mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
             <div className="text-center">
               <h2 className="text-4xl font-bold xl:text-5xl">My Skill</h2>
@@ -205,7 +208,7 @@ export default function Home() {
           </div>
           <IndexCarousel></IndexCarousel>
         </section>
-        <section id="pricing" className="overflow-x-clip pt-22 mb-32">
+        <section id="pricing" className="overflow-x-clip pt-15 mb-32 sm:pt-12 sm:mb-10">
           <div className="mx-auto px-4 sm:px-12 xl:max-w-5xl xl:px-0">
             <div className="relative z-10 text-center md:mx-auto md:w-5/6 lg:w-4/6">
               <h2 className="text-3xl font-bold light:text-gray-900 dark:text-white md:text-4xl xl:text-5xl">

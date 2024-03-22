@@ -47,7 +47,7 @@ const frmdata = [
 
 const IndexCarousel = () => {
   return (
-    <div className="flex items-center justify-center flex-col h-[550px]">
+    <div className="flex items-center justify-center flex-col sm:h-[450px] lg:h-[550px]">
       <Swiper
         breakpoints={{
           340: {
