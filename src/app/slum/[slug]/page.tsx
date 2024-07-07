@@ -1,5 +1,3 @@
-import { GetServerSidePropsContext } from "next";
-
 export interface Result {
   id: number;
   name: string;
@@ -28,16 +26,16 @@ export interface VoiceActor {
   Korean: string;
 }
 
-const getCharacterDetail = async (context: GetServerSidePropsContext) => {
-  const id = context.params?.id;
-  const response = await fetch(`https://gsi.fly.dev/characters/${id}`);
+export default async function Page({
+  params: { slug },
+}: {
+  params: { slug: string };
+}) {
+  const response = await fetch(`https://gsi.fly.dev/characters/${slug}`);
   const result: { result: Result } = await response.json();
-  return <Page result={result.result} />;
-};
-
-const Page = (props: { result: Result }) => {
-  //   console.log(props.result.model_type);
-  return <>sittipol</>;
-};
-
-export default getCharacterDetail;
+  return (
+    <>
+      <h1>{result.result.name}</h1>
+    </>
+  );
+}
