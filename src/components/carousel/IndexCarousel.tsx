@@ -71,11 +71,12 @@ const IndexCarousel = () => {
             <SwiperSlide key={index}>
               <div
                 style={{ margin: "auto" }}
-                className="flex flex-col gap-6 mb-20 group relative shadow-lg text-white rounded-xl px-6 py-8 h-[250px] w-[215px] lg:h-[370px] lg:w-[350px] overflow-hidden cursor-pointer"
+                className="flex flex-col gap-6 mb-20 group relative shadow-lg text-white rounded-xl px-6 py-8 h-[250px] lg:h-[370px] overflow-hidden cursor-pointer"
               >
                 <div
                   className="absolute inset-0 bg-cover bg-center"
                   style={{
+                    padding: 2,
                     backgroundImage: `url(${val.images})`,
                   }}
                 />
